@@ -37,5 +37,10 @@ void print()
   printf(" %20.5e\n",b);
   printf(" %020.5e\n",b);
 
+
+
+  int i=10;
+  printf("%d %d\n",i,i++);
+  printf("%d",(5,i));
 }
 int main(){print();}
