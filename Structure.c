@@ -242,7 +242,7 @@ struct
 // Can not take address of Bit-Field
 
 struct BitField{
-	unsigned a:4;   // size of a is 1 Bit
+	unsigned a:4;   // size of a is 4 Bit
 }Bit;
 
 

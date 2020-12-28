@@ -41,6 +41,6 @@ void print()
 
   int i=10;
   printf("%d %d\n",i,i++);
-  printf("%d",(5,i));
+  printf("%d ",(5,i));
 }
 int main(){print();}

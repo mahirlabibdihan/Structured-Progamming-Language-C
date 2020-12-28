@@ -70,6 +70,17 @@ void ReverseBit(unsigned n)
     }
     PrintBit(n);
 }
+void swap2(int *a,int *b)
+{
+    // *a=*a^*b;
+    // *b=*a^*b;
+    // *a=*a^*b;
+
+    // *a^=*b;
+    // *b^=*a;
+    // *a^=*b;
+    *a^=*b^=*a^=*b;
+}
 int main()
 {
     int n,x;

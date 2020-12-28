@@ -15,5 +15,9 @@ main()
 
 	printf("%d %d %d\n",a,b,c);
 
-	printf("%d",a=5);
+	printf("%d\n",a=5);
+	a=8,9,10;
+	printf("%d\n",a);
+	a=(8,9,10);
+	printf("%d\n",a);
 }

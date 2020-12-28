@@ -4,7 +4,7 @@
 
 // Macros:
 // va_start , va_arg , va_copy , va_end
-void print(double n, ...  )
+void print(double n, ... )
 {
 
 
@@ -38,8 +38,7 @@ void print(double n, ...  )
     for(i=0;i<n;i++)
     {
       printf("%d \n",va_arg(ap,int));
-    }
-   	
+    }   	
     // Firstly, va_arg fetch the data which 'ap' is currently pointing to .
     // Then, va_arg increments 'ap' based on the sizeof the 2nd argument of va_arg and as a result 'ap' points to the next argument .
 
