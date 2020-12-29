@@ -1,4 +1,7 @@
-void swap1(int *a,int *b)
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+void swap1(int *a,int *b)    // Applicable for swaping pointers 
 {
 	int c=*a; 
 	*a=*b; 
@@ -41,17 +44,29 @@ void swap4(int *a,int *b)
 
 	*a=*a*(*b)/(*b=*a); //*a*=(*b)/(*b=*a);//Incorrect
 }
-void swap5(char x[],char y[])
+
+void swap5(char *x,char *y)
 {
-	char z[101];
+	// char z[101];
+	char *z=(char*)malloc(sizeof(char)*(strlen(x)+1));
 	strcpy(z,x); 
 	strcpy(x,y); 
 	strcpy(y,z);
 }
 
+void swap6(char **x,char **y)
+{
+	char *temp=*x;
+	*x=*y;
+	*x=temp;
+}
 int main()
 {
 	int a=5,b=4;
 	swap1(&a,&b);
+	char *p="Dihan",*q="Ohi",r[10]="Subha",s[10]="Amrin";
+
+	swap6(&p,&q);
+	swap6((char**)&r,(char**)&s);
 	printf("%d %d\n",a,b);
 }

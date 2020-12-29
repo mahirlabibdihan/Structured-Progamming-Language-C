@@ -5,9 +5,10 @@
 int main()
 {
 	float f=5.4;
-	// BitPattern(f); //Error
+	// BitPattern(536870912); //Error
 	int* a=(int*)&f;
 	BitPattern(*a);
+	printf("%d",f);
 
 
 }

@@ -1,6 +1,7 @@
 #include<stdio.h>
 #define X 0.8
-#define print_dec(var)  printf("%s=%d\n",#var,var);
+
+#define print_dec(var)  printf(#var"=%d\n",var);
 
 
 
@@ -19,5 +20,6 @@ int main()
 	// printf("%s %s %d %s",__DATE__,__TIME__,__LINE__,__FILE__);
 
 
-	printf("%d",MAX);
+
+	printf(#var);
 }  
