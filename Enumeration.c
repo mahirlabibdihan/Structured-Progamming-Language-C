@@ -5,7 +5,7 @@
 // Enumeration is a user defined datatype in C language. It is used to assign names to the integeral constants , which makes the code more readable . 
 // The value assigned to names in range from minimum possible integer value to maximum possible integer value.
 
-//sizeof enum variable 
+//sizeof enum variable is the size of the largest integer constant
 // Names of two different enums in the same scope can't be the same .
 enum week{Sat=1,Sun=5,Mon=4,Tue=2,Wed=8,Thur=9,Fri=10};  // These are integer constants // only integer numbers can be assigned
 enum week day = Sat;

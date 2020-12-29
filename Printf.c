@@ -41,6 +41,8 @@ void print()
 
   int i=10;
   printf("%d %d\n",i,i++);
-  printf("%d ",(5,i));
+  printf("%d\n",(5,i));
+
+  printf("%Takla");
 }
 int main(){print();}
