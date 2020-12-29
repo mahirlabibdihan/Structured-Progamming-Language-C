@@ -22,6 +22,14 @@ int main()
 	b1=b;
 
 
+	// Swap
+	// Arrays created by malloc can be swapped easily
+	int *B=(int*)malloc(sizeof(int)*5);
+	int *temp=b;
+	b=B;
+	B=temp;
+
+
 
 	//2D array
 
