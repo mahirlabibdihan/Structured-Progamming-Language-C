@@ -216,6 +216,8 @@ void AssignStructure()
 	P.a=10;
 	P.x->a=10; // For Nested structure
 
+	struct Point Q=P;
+
 	struct Point *S=&P;    // Structure Pointer 
 	(*S).a=10;
 	S->a=10;  // Both are same
@@ -224,6 +226,17 @@ void AssignStructure()
 	
 }
 
+
+struct Day
+{
+	int Good,Bad;
+};
+void Initialize()
+{
+	struct Day a={10,20};
+	struct Day b={.Bad=20};
+	struct Day c=a;
+}
 
 
 struct
@@ -271,6 +284,12 @@ void FAM()
 
 
 
+void Swap(struct Day *a, struct Day *b)
+{
+	struct Day *temp=a;
+	a=b;
+	b=temp;
+}
 
 
 int main()

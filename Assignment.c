@@ -4,6 +4,8 @@ main()
 	int a=5,b=4,c=3;
 	// Left side of '=' must be variable
 	a=10;
+	// lvalue can't have address operator
+	// &a=10; // Invalid
 	// (c>2?a:b)=10; //C++
 	// Right side of '=' can be variable,constant,expression
 	a=10;
