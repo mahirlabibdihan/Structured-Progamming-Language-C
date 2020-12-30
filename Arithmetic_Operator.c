@@ -17,7 +17,6 @@ int main()
 		/*********************/
 
 
-
 		// Substraction Operator :
 		// Takes two operands . Two operands can be ,
 		// --> Two variables/constants of any type
@@ -50,10 +49,10 @@ int main()
 		+b;
 		// +d; // Invalid
 
+
 		/***** Shortcut *****/
 		// + Type2
 		/*********************/
-
 
 
 		// Addition Operator :

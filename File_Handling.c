@@ -53,77 +53,44 @@
 	From-> SEEK_SET
 		   SEEK_CUR
 		   SEEK_END
-	ftell(FILE*);
-
-
-
-
-		
+	ftell(FILE*);		
 */
 
-int f()
-{
-	return 1,2;
-}
+
 int main()
 {
 
-	
-	FILE *Ptr=fopen("Data.txt","w");
-	int i;
-	for(i=0;i<10;i++)
-	{
-		// printf("%c %d %c %d %d %d %d %c\n",*(Ptr->_ptr),Ptr->_cnt,*(Ptr->_base),Ptr->_flag,Ptr->_file,Ptr->_charbuf,Ptr->_bufsiz,*(Ptr->_tmpfname));
-		fprintf(Ptr,"%d\n",i);
-	}
-	// FILE* x=fopen("TEST.txt","r+");
+	FILE* Ptr1;
+	Ptr1=fopen("Data.txt","w");
+	if(!Ptr1) return 1;
+	fprintf(Ptr1,"%d\n",1905072);
+	fprintf(Ptr1,"Dihan\n");
+	fputs("Pass\n",Ptr1);   // Unlike puts , needs \n for new line
+	fputc('X',Ptr1);
+	fputc('\n',Ptr1);
+	fputc('X',Ptr1);
+	fclose(Ptr1);
 
-	// // fscanf(x,"%s",s);
-	// // while(EOF!=scanf("%s",&s[i])) i=strlen(s);
-	// // while(NULL!=gets(&s[i])) i=strlen(s);
-	// // while(gets(&s[i])) i=strlen(s);
-	// if(x==NULL) puts("FAILED");
-	
-	// int * a;
-	// fscanf(x,"%d",&a);
-	// // fprintf(x,"%d",a);
-	// fscanf(x,"%d",&a);
-	// fprintf(x,"%d",a);
-	// // fseek(x,-4,SEEK_END);
-	// printf("%d\n",ftell(x));
-	// int a=1;
-	// fwrite(&a,sizeof(a),1,x);
-	// a++;
-	// fwrite(&a,sizeof(a),1,x);
-	// a++;
-	// fwrite(&a,sizeof(a),1,x);
-	// a++;
-	// fwrite(&a,sizeof(a),1,x);
-	// a++;
-	// fwrite(&a,sizeof(a),1,x);
-	// a++;
-	// while(fread(&a,sizeof(a),1,x))
-	// {
-	// 	printf("%d ",a);
-	// }
-	// printf("%d\n",a);
 
-	// scanf("%[^\n]", s);
-	// puts(s);
+	int Roll;
+	char Name[10];
+	Ptr1=fopen("Data.txt","r");
+	if(!Ptr1) return 2;
+	fscanf(Ptr1,"%d",&Roll);
+	fgets(Name,19,Ptr1);	// Unlike gets , string size can be limited
+	fgetc(Ptr1);
+	fclose(Ptr1);
 
-	// fprintf(x,"\n");
-	// fprintf(x,"Dihu");
 
-	// int n;
-	// scanf("%d",n);
-	// fflush(stdin);
-	// fgets(s,10,x);
-	// puts(s);
-	// printf("\%");
+	// To use normal functions while working with files
+	// freopen("Input.txt","r",stdin);		
+	// freopen("Output.txt","w",stdout);	// Can't go to normal stream
 
-	// int n;
-	// // scanf("%d",&n);
-	// scanf("%s",&n);
-	// printf("%d",n); 
-	// fclose(x);
+
+	Ptr1=fopen("Data.txt","r");
+	if(!Ptr1) return 3;
+	fseek(Ptr1,0,SEEK_END);
+	long a=ftell(Ptr1);		// Measure size character by character
+	printf("%d",a);
+	fclose(Ptr1);
 }
