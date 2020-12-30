@@ -231,10 +231,16 @@ void AssignStructure()
 }
 
 
-struct Day
-{
-	int Good,Bad;
+struct Day {
+	int Good;
+	int Bad;
 };
+
+struct Day Today = {
+	.Good=10,
+	.Bad=30
+};
+
 void Initialize()
 {
 	struct Day a={10,20};

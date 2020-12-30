@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#include<conio.h>
 /*
 	  		0X0A(10) -> Line Feed / New Line
 	'\n' ->
@@ -10,6 +9,7 @@
 
 
 	FILE is a structure.
+ 
 
 
 	FILE* fopen(char* File_Path,char* Mode);
@@ -67,7 +67,15 @@ int f()
 }
 int main()
 {
-	printf("%d",f());
+
+	
+	FILE *Ptr=fopen("Data.txt","w");
+	int i;
+	for(i=0;i<10;i++)
+	{
+		// printf("%c %d %c %d %d %d %d %c\n",*(Ptr->_ptr),Ptr->_cnt,*(Ptr->_base),Ptr->_flag,Ptr->_file,Ptr->_charbuf,Ptr->_bufsiz,*(Ptr->_tmpfname));
+		fprintf(Ptr,"%d\n",i);
+	}
 	// FILE* x=fopen("TEST.txt","r+");
 
 	// // fscanf(x,"%s",s);

@@ -1,8 +1,8 @@
 #include<stdio.h>
 /*---------Type definitions vs Macro definitions----------*/
 // Syntax:
-// typedef original alias;
-// #define alias original
+// typedef data_type alias;
+// #define alias any_name
 // typedef -> Follow scope rules.
 // #define -> Doesn't follow scope rules.Works globally.
 void f(int a, int b)
