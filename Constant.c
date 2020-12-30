@@ -26,22 +26,23 @@ int main()
 
 
 	/************Const and Pointer*************/
-	int var;
+	const int Var;
 	const int *p1;  // Pointer to an integer constant // Can assign to p1 . But can't assign to *p1 . 
 	//or int const *p1;
-	p1 = &var; // Valid
-	// *p1=var; // Invalid
+	p1 = &Var; // Valid
+	// *p1=Var; // Invalid
 
 
-	int *const p2;  // Constant pointer to an integer // Can assign to *p1 . But can't assign to p1 .
+	int var;
+	int *const p2=&var;  // Constant pointer to an integer // Can assign to *p1 . But can't assign to p1 .
 	// p2 = &var; // Invalid
 	*p2 = var; //Valid
 
 
-	const int *const p3;  // Constant pointer to an integer constant Can assign to *p3 . But can't assign to p3 .
+	const int *const p3=&Var;  // Constant pointer to an integer constant Can assign to *p3 . But can't assign to p3 .
 	//or int const *const p3; // 
-	// p3 = &var ; // Invalid
-	// *p3 = var ; // Invalid
+	// p3 = &Var ; // Invalid
+	// *p3 = Var ; // Invalid
 	/******************************************/
 
 
