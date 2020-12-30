@@ -8,5 +8,5 @@ int main()
 	// int *Name = "Dihan" ; // Incorrect  // Read only . 
 	int *Name=(char*)malloc(sizeof(char)*(strlen("Dihan")+1));
 	strcpy(Name,"Dihan");
-	free(a);
+	free(a);   // Frees heap objects , not array objects .
 }

@@ -1,6 +1,17 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#define Swap(Type,a,b) {Type c=a;a=b;b=c;}
+void swap (void *a, void *b, int sz) {
+    char buf[512];
+    void *p = buf;
+    if (sz > sizeof(buf)) p = malloc(sz);
+    memcpy(p, a, sz);
+    memcpy(a, b, sz);
+    memcpy(b, p, sz);
+    if (p != buf) free(p);
+}
+
 void swap1(int *a,int *b)    // Applicable for swaping pointers 
 {
 	int c=*a; 

@@ -4,6 +4,15 @@
 // return-type function-name (parameter declarations) {
 // definitions and statements
 // }
+// int Function(int a,int b)
+// {
+		// return a+b;
+// }
+
+// int Function(a,b)int a;int b;
+// {
+		// return a+b;
+// }
 
 
 //Standard Library Function - Built in functions in c programming which are defined in header files. Only the prototypes are there in the header files. Not the source code.

@@ -78,8 +78,11 @@ int main()
     // Two pointers can't be added . One pointer can be substracted from another . The result will be a Long Integer value , not a pointer ;
 
     // A=A+C; // Invalid
+
     B = A - C; 
     A = A - C + A; //  A = A + ( A - C );  // Valid
+
+
 
 
 

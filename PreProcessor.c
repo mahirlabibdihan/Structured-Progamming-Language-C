@@ -1,8 +1,16 @@
 #include<stdio.h>
 #define X 0.8
 
+#define swap(Type,a,b) {Type c=a;a=b;b=c;}
+
 #define print_dec(var)  printf(#var"=%d\n",var);
 
+#define SUM(a,...) sum(a,(5, ##__VA_ARGS__) )
+
+int sum (int a,int b)
+{
+  return a + b;
+}
 
 
 #define abs(x)  ( x>=0 ? x : -x ) 

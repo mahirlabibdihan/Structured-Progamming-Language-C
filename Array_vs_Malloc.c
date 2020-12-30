@@ -43,6 +43,8 @@ int main()
 	int i;for(i=0;i<10;i++)*(d+i)=(int*)malloc(sizeof(int)*10);//d!=d[0]&&d[0]!=&d[0][0]
 	int** f=d;
 
+	int *M[10];
+	for(i=0;i<10;i++) M[i]=(int*)malloc(sizeof(int)*10);
 
 /**********************************************************/
 	int (*m)[10]=(int(*)[])malloc(sizeof(int)*10*10);       //More like normal 2d array
