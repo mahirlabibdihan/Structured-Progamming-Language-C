@@ -286,9 +286,9 @@ void FAM()
 
 void Swap(struct Day *a, struct Day *b)
 {
-	struct Day *temp=a;
-	a=b;
-	b=temp;
+	struct Day temp=*a;
+	*a=*b;
+	*b=temp;
 }
 
 
