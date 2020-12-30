@@ -8,6 +8,7 @@
 // structure follows scope rules
 // structure elements can't be initialized in c
 
+
 /*############################################################### T Y P E     O F     S T R U C T U R E      D E C L A R A T I O N S ################################################################*/
 	
 	struct SN1; //forward declaration
@@ -185,7 +186,10 @@
 
 
 
-
+// static variable can't be declared in structure .
+// struct Static{        
+// 	static int a;
+// };      // Invalid
 
 
 // Function Name , Struct Name, Variable Name doesnot conflict. It can be same.
@@ -260,28 +264,6 @@ struct BitField{
 
 
 
-// Flexible Array Member
-struct Flex
-{
-	int Roll;
-	char Name[];   // flexible array member // need another variable in the structure to declare flexible array // It must be the last element within thr structure
-};
-
-struct Flex* Create(struct Flex *s,int Roll,char Name[])
-{
-	s=(struct Flex*)malloc(sizeof(*s)+sizeof(char)*(strlen(Name)+1));
-	s->Roll=Roll;
-	strcpy(s->Name,Name);
-	return s;
-}
-
-void FAM()
-{
-	struct Flex *s=Create(s,10,"Dihan");
-	// printf("%s\n",s->Name);
-	struct Flex *r=(struct Flex*)malloc(sizeof(*s)+sizeof(int)*10);
-}
-
 
 
 void Swap(struct Day *a, struct Day *b)
@@ -292,6 +274,16 @@ void Swap(struct Day *a, struct Day *b)
 }
 
 
+
+
+
+// Flexible Array Member
+struct Flex
+{
+	int Roll;
+	char Name[];   // flexible array member // need another variable in the structure to declare flexible array // It must be the last element within thr structure
+};
+void FAM();
 int main()
 {	
 
@@ -309,6 +301,23 @@ int main()
 	printf("%u",Student);
 }
 
+
+
+
+struct Flex* Create(struct Flex *s,int Roll,char Name[])
+{
+	s=(struct Flex*)malloc(sizeof(*s)+sizeof(char)*(strlen(Name)+1));
+	s->Roll=Roll;
+	strcpy(s->Name,Name);
+	return s;
+}
+
+void FAM()
+{
+	struct Flex *s=Create(s,10,"Dihan");
+	// printf("%s\n",s->Name);
+	struct Flex *r=(struct Flex*)malloc(sizeof(*s)+sizeof(int)*10);
+}
 //&Student.Name[0] , &Student ,Student--> 4202560
 
 //Student --> 4294953984
