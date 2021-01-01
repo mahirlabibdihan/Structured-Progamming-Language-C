@@ -76,4 +76,7 @@ int main(int arg)
 	
 	long double Y;
 	double long Z;
+
+	unsigned char AB=-1;
+	printf("%d",AB);
 }

@@ -25,9 +25,9 @@ int main()
 	// int counter=5;
 	// print_dec(counter);
 	
-	// printf("%s %s %d %s",__DATE__,__TIME__,__LINE__,__FILE__);
+	printf("%#s %s %d %s",__DATE__,__TIME__,__LINE__,__FILE__);
 
 
 
-	printf(#var);
+	// printf(#var);
 }  

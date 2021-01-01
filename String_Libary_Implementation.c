@@ -31,13 +31,10 @@ char* strupr(char* s)
 }
 char* strrev(char* s)
 {
-   int i;
-   for(i=0;i<=strlen(s)/2;i++)
+   int i,n=strlen(s);
+   for(i=0;i<n-i-1;i++)
    {
-
-       char c=s[i];
-       s[i]=s[strlen(s)-i-1];
-       s[strlen(s)-i-1]=c;
+      s[i]^=s[n-i-1]^=s[i]^=s[n-i-1];
    }
    return s;
 }

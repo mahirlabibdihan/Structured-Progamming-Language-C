@@ -64,7 +64,7 @@ int main()
 	Ptr1=fopen("Data.txt","w");
 	if(!Ptr1) return 1;
 	fprintf(Ptr1,"%d\n",1905072);
-	fprintf(Ptr1,"Dihan\n");
+	fprintf(Ptr1,"Dihan\n"); 
 	fputs("Pass\n",Ptr1);   // Unlike puts , needs \n for new line
 	fputc('X',Ptr1);
 	fputc('\n',Ptr1);
@@ -90,7 +90,7 @@ int main()
 	Ptr1=fopen("Data.txt","r");
 	if(!Ptr1) return 3;
 	fseek(Ptr1,0,SEEK_END);
-	long a=ftell(Ptr1);		// Measure size character by character
+	long a=ftell(Ptr1);		// Measure size character by character in text mode
 	printf("%d",a);
 	fclose(Ptr1);
 }

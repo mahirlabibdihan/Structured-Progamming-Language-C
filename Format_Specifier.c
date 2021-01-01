@@ -37,7 +37,19 @@ int main()
 
 }
 
+/*
+A format specification has the following form:
 
+>>-%--+---+--+-------+--+----+--type---------------------------><
+      '-*-'  '-width-'  +-h--+
+                        +-L--+
+                        +-l--+
+                        +-ll-+
+                        +-H--+
+                        +-D--+
+                        '-DD-'
+
+*/
 
 
 // void Printf(const char *fmt, ...)
