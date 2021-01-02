@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 
-void Stdin_Buffer()
+void Stdin_Buffer()			// Prints the characters left in current buffer
 {
 		printf("Characters left in stdin : |");
 		char STDIN[10];
@@ -24,6 +24,8 @@ void Stdin_Buffer()
 		for(i=Length-1;i>-1;i--)
 			ungetc(STDIN[i],stdin);
 }
+
+
 //  One white-space character in format-string matches any combination of white-space characters in the input.
 int main()
 {
@@ -39,9 +41,18 @@ int main()
 	printf("Numbers of items read = %d\n",d);
 	// To see whats left in stdin
 	Stdin_Buffer();
-	// gets(e);		// flushes the '\n' entered after the string
+	// gets(e);		// flushes the '\n' entered after the string  // Can't limit the input size
 	// scanf("%[^\n]",e);   // '\n' remains in the stdin
  
+ 	// scanf("\n%[^\n]",e);	// ignores '\n' at the start of input buffer
+ 	// getchar();	  // flushes the '\n' entered after the string
+
+	// To take a whole line as input . 
+ 	// scanf("\n%9[^\n]",e),scanf("%*[^\n]"),getchar();
+ 	// Can limit input string size .
+ 	// ignores '\n' at the start of input buffer
+ 	// flushes everything left in the stdin after taking limited input .
+
 
 	// scanf("%[^' ']",e);
 	// Takes input until whitespace

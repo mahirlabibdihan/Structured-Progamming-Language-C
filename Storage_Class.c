@@ -14,14 +14,15 @@
 
 #include<stdio.h>
 
-int a;   //Default storage class of global variable is External.
-extern int b;  //External storage class  // Same as int a;  // Can be accessed by the functions in different C program file as variable .
+int A;   //Default storage class of global variable is External.
+extern int B;  //External storage class  // Same as int a;  // Can be accessed by the functions in different C program file as variable .
 
-static int c;  //A static global variable is a global variable that can only be accessed by functions in the same C program file as the variable.  // file scope
+static int c;  //A static global variable is a global variable that can only be accessed by functions in the same C program file as the variable.  // file scope // Not for C++
 
 int F()
 {
 	static int d; //static variable will be created only once in a program. No matter how many times it is been declared.
+	
 	d++;
 	return d;
 
@@ -32,7 +33,15 @@ int main()
 	auto int b; // Automatic Storage Class // Same as int a.
 	register int c;  // Register Storage Class
 	// Register storage class is same as Automatic Storage class. But it stores variable in thr Register and takes less time in code execution compared to Automatic.
-	// But we can not declare all varible as Register variables. Because size of register is small . 
+	// But we can not declare all varible as Register variables. Because size of register is small .
+
+	// extern int b=10;   // Extern variables can't be modified
+	extern int A;
+
+	int B=10;
+	A=10;
+	
+
 
 	static int d;   // Static Storage Class // Default value 0.
 

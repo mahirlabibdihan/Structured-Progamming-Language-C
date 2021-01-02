@@ -1,5 +1,7 @@
 #include <stdio.h>
  
+
+// Generally we can't pass arguments to main() function . But we can , using commandline .
 // Commandline Argument : Arguments passed to program  using commandline(Ex: CMD) during program execution . 
 // Command : File_name.exe .....Arguments.....
 
