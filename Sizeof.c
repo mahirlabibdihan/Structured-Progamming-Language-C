@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main()
 {
 	int a[10];
@@ -20,4 +21,10 @@ int main()
 	printf("Size of Float: %d\n",sizeof(float));
 	printf("Size of Double: %d\n",sizeof(double));
 	printf("Size of Long Double: %d\n",sizeof(long double));
+
+
+	int (*c)[10];
+	int *d[10];
+	int e[10];
+	printf("%d %d %d %d",sizeof(c),sizeof(d),sizeof(e),sizeof(&e));
 }

@@ -21,7 +21,7 @@ static int c;  //A static global variable is a global variable that can only be 
 
 int F()
 {
-	static int d; //static variable will be created only once in a program. No matter how many times it is been declared.
+	static int d=0; //static variable will be created and initialized only once in a program. No matter how many times it is been declared.
 	
 	d++;
 	return d;

@@ -9,7 +9,6 @@
 // int a;
 
 
-#include "D1h@n.h"
 // Declaration :
 // extern int a;    // Variable Declaration .
 int Func(int,int);    // Function Declaration .

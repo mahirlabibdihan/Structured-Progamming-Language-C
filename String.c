@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define strin(String_Name,Input_Width) scanf("\n%"Input_Width"[^\n]",String_Name),scanf("%*[^\n]"),getchar()
+#define strin(String_Name,Input_Width) scanf(" %"Input_Width"[^\n]",String_Name),scanf("%*[^\n]"),getchar()
 int main()
 {
 	char Name[10]="Dihan";
@@ -7,4 +7,12 @@ int main()
 	// puts(List);
 	strin(Name,"9");
 	puts(Name);
+
+	int a;
+
+	sscanf(Name,"%d",&a);
+	printf("%d\n",a);
+
+  sprintf(Name,"%d",10);
+  puts(Name);
 }

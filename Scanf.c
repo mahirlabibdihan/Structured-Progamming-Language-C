@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 
 void Stdin_Buffer()			// Prints the characters left in current buffer
@@ -32,6 +33,9 @@ int main()
 	// f the function successfully reads the data, the number of items read is returned
 	int c=5,a=10;
 	char b='a',e[10];
+	// int count;
+	// scanf("%d%d %n",&c,&a,&count);
+	// printf("%d\n",count);
 	printf("Values before scanf : a=%d b='%c' c=%d\n",a,b,c);
 	int d=scanf("%d%c%d",&a,&b,&c); // Input - 12 x 13 --> a=12 b=' ' c= Unchanged
 	// 12 will be stored in a . As we have entered a space after first integer , the space will be stored in b . Then scanf will look for a integer . But it will find 'x' . 'x' will confilct with %d . So scanf() will end . 'x 13' is not read . So it is left in stdin .
@@ -55,6 +59,7 @@ int main()
 
 
 	// scanf("%[^' ']",e);
+	
 	// Takes input until whitespace
 
 	// scanf("%[^' ','\n']",e); 

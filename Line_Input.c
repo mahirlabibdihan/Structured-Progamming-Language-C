@@ -29,12 +29,14 @@ int main()
 
 
 	// Problem 2:
-	// Can't limit the input . Can take input of unlimited size , i.e. Input string size can be greater than ther size of the declared string .
+	// Can't limit the input . Can take input of unlimited size , i.e. Input string size can be greater than the size of the declared string .
 
 	gets(String);
 	// Input : "I am Mahir Labib Dihan"     // Size of input is 22 . But size of declared string is 10 (char String[10];) 
 	puts(String);
 	// Output : "I am Mahir Labib Dihan" 	// It means the whole input will store into the string ,  no matter what the size is .
+
+	// We can outcome this by using fgets(String,10,stdin);  // But it leaves the '\n' in stdin.
 	/************************/
 
 
@@ -80,6 +82,25 @@ int main()
 
 
 	// So what's the proper way to take a line as Input????
+	// Solution :
+	  scanf("\n%10[^\n]",Line1);      // Ignores newline and whitespaces at the beginning.
+	  scanf("%*[^\n]");		// Clears the stdin .( '\n' is still left in stdin .)
+	  getchar();	// Clears '\n' from stdin .
+
+	// Take a whole line as input : 
+
+	/******* scanf("\n%10[^\n]",Line1),scanf("%*[^\n]"),getchar(); *******/
+
+	// scanf("\n%10[^\n]",Line1);while((getchar()) != '\n');
+
+	// You can use this as a macro -
+	#define strin(String_Name,Input_Width) scanf("\n%"Input_Width"[^\n]",String_Name),scanf("%*[^\n]"),getchar()
+	// String_Name(A pointer) is the address of the string used for taking input .
+	// Input_Width(Character Array) is the width of the expected input . To set 10 as width we should pass "10" . 
+
+
+
+	  puts(Line1);
 
 	
 }

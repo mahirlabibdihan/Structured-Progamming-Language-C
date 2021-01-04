@@ -4,29 +4,28 @@
 
 #include<stdio.h>
 #include<stdarg.h>
+// int printf ( const char * format, ... );
+// int scanf ( const char * format, ... );
+// %[flags][width][.precision][length]specifier, 
 
 
-// %c -> Character
-// %hi -> Short Integer
-// %hu -> Unsigned Short Integer
-// %d -> Decimal
-// %ld %li -> Long Integer
-// %lld -%lli > Long Long Integer
-// %u -> Unsigned Integer
-// %lu -> Unsigned Long Integer
-// %llu -> Unsigned Long Long Integer
-// %i -> Integer
-// %f -> Floating
-// %lf -> Double
-// %Lf -> Long Double
-// %e %E -> Exponential
-// %g %G -> Smaller between %g and %f
-// %o -> Octal
-// %x %X -> Hexadecimal
-// %p -> Pointer
-// %s -> String
-// %n -> Prints nothing
-// %% -> Prints % character
+// Specifiers :
+// c -> Character
+// i -> Integer
+// u -> Unsigned
+// d -> Decimal
+// f -> Floating (Lowercase)
+// F -> FLoating (Uppercase)
+// e -> Scientific Notation (Lowercase)
+// E -> Scientific Notation (Uppercase)
+// g -> Shortest representation between %e and %f
+// G -> Shortest representation between %E and %F
+// o -> Octal
+// x -> Hexadecimal (Lowercase)
+// X -> Hexadecimal (Uppercase)
+// p -> Pointer Address
+// s -> Array of characters
+
 
 
 // Format specifiers contain maximum 3 characters .

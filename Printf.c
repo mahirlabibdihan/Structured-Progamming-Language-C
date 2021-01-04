@@ -1,4 +1,14 @@
 #include<stdio.h>
+// int printf(const char* format,...);
+
+// %[flags][width][.precision][length]specifier, 
+
+
+// On success, the total number of characters written is returned.
+
+// If a writing error occurs, the error indicator (ferror) is set and a negative number is returned.
+
+// If a multibyte character encoding error occurs while writing wide characters, errno is set to EILSEQ and a negative number is returned.
 void print()
 {
   int a=155;
@@ -53,5 +63,13 @@ void print()
   // printf("%Takla");
 
   printf("%-s","Dihan");
+
+  char Name[10];
+  sprintf(Name,"%d",10);
+  puts(Name);
+
+
+  printf("%d\n",5.5);
+  printf("%d\n",(int)5.5);
 }
 int main(){print();}

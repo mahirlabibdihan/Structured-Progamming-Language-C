@@ -11,13 +11,17 @@ int main (void)
     char buf1[12] = "hello world"; 
     char buf2[12]; 
   
+    int b=10;
+    fwrite(&b,4,1,stdout);
     // assume foobar.txt is already created 
     fd[0] = open("data.txt", O_RDWR);         
     fd[1] = open("data.txt", O_RDWR); 
       
-    int a=5;
+    int a='5';
     // write(fd[0], buf1, strlen(buf1));          
-    write(1,&a,4); 
+    // write(1,&a,4); 
+
+
   
     close(fd[0]); 
     close(fd[1]); 

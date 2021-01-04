@@ -10,6 +10,7 @@
 // Union allows to store different variables in the same memory location .
 // Union can have many members . But only one member can contain a value at any given time .
 // Size of union is the size of the largest member in the union .
+// No padding required in the union
 
 union U1{
 	int a;
@@ -26,7 +27,6 @@ union U2{
 	char c;
 }Var2={.b=10};
 // Any other element other than first one can also be initialized
-
 
 
 int main()

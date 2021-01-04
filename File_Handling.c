@@ -93,4 +93,18 @@ int main()
 	long a=ftell(Ptr1);		// Measure size character by character in text mode
 	printf("%d",a);
 	fclose(Ptr1);
+
+
+	// Read whole file
+	Ptr1=fopen("Data.txt","r");
+	if(!Ptr1) return 4;
+    while (fgetc(Ptr1) != EOF) {
+      ++n;
+    }
+    if (feof(Ptr1)) {
+      puts ("End-of-File reached.");
+      printf ("Total number of bytes read: %d\n", n);
+    }
+    else puts ("End-of-File was not reached.");
+    fclose(Ptr1);
 }

@@ -21,7 +21,7 @@
 
 
 //Function name is a pointer
-
+// Default return type of a function is int .
 
 //Global Variables can be accessed and changed from any function
 //Local Variables can be accessed and changed from the same function only.Variable declared within a function can only be used by that function.
