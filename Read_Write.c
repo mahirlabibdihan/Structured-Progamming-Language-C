@@ -3,6 +3,16 @@
 #include<stdio.h> 
 #include<string.h> 
 #include<unistd.h> 
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
 #include<fcntl.h> 
   
 int main (void) 

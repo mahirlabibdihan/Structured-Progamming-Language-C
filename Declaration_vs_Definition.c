@@ -1,3 +1,14 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
+
 // Variable , Function , Structure , etc... can be Declared many times , But defined only once . 
 // Memory is allocated during the Definition . Memory can be allocated only once for a specific Variable , etc....
 

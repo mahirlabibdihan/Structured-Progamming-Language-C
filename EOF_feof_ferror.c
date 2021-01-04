@@ -1,3 +1,14 @@
+/*
+ ______   _________ _      _       _
+|  ____ \|___   ___| |    | |     | |
+| |    \ \   | |   | |____| |     | |
+| |    | |   | |   |  ____  |     | |
+| |____/ /___| |___| |    | |_____| |
+|_______/|_________|_|    |_________|
+M A H I R     L A B I B     D I H A N
+
+*/
+
 #include<stdio.h>
 #include<errno.h>
 //  Many of the functions return the value of the macro EOF to indicate unsuccessful completion of the operation . Since EOF is used to report both end of file and random errors, it’s often better to use the feof function to check explicitly for end of file and ferror to check for errors.
