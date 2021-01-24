@@ -134,7 +134,7 @@ int exp=*a&(unsigned char)~0 << 23;
 // BitPattern(exp);
 unsigned mask=1<<1;
 
-BitPattern('abcd');
+BitPattern(-56);
 PrintBit(0);
 PrintBit2(0);
 RecursivePrintBit(0);

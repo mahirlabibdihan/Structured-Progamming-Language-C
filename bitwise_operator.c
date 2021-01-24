@@ -115,14 +115,14 @@ int main()
 
 
 // left shift
-//  x<<n    // n<width of data type(for int 32)
+//  x<<n    // 0=<n<width of data type(for int 32)
 //  x = 10110100011
 //  x<<5 = 100011----- //the empty space will always(signed/unsigned) fill up by 0 
 //       = 1000110000
 
 
 // right shift
-// x>>n      // n<width of data type(for int 32)
+// x>>n      // 0=<n<width of data type(for int 32)
 //   x = 10110100011
 //x>>5 = -----101101 //the empty space will fill up by 0 when x is unsigned 
 // If x is signed -> the empty space will fill up by 0 when the sign bit is 0
@@ -145,7 +145,7 @@ int exp=*a&(unsigned char)~0 << 23;
 unsigned mask=1<<1;
 
 
-BitPattern('\uABCD');
+BitPattern(46);
 BitPattern('ABCD');
 PrintBit(0);
 PrintBit2(0);
@@ -158,3 +158,25 @@ ReverseBit(4544);
 
 }
 //0 10000001 01011001100110011001101
+
+
+/*
+
+(70)8  ->       00111000
+                11000111   (1's)
+                     + 1
+                --------
+(-70)8 ->       11001000   (2's)
+
+
+
+(1010)2 ->      00001010
+(-70)8  ->  +   11001000 
+            ------------
+                11010010  -> (-46)10  ----> Answer : (1010)2-(70)8 = (-46)10
+        (1's)   00101101       ^
+                     + 1       |
+                --------       | 
+        (2's)   00101110  -> (46)10              
+
+*/

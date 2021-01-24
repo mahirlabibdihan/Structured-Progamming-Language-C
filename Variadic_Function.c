@@ -14,6 +14,8 @@ M A H I R     L A B I B     D I H A N
 
 // Macros:
 // va_start , va_arg , va_copy , va_end
+
+// Variadic functions must have at least one named parameter, so, for instance, char *wrong(...);   is not allowed in C.
 void print(double n, ... )
 {
 

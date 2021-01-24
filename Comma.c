@@ -21,4 +21,6 @@ int main()
 	// Comma as a separator
 	// Comma in place of semicolon
 
+	// Can't use Comma before any keyword
+
 }

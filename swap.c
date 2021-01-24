@@ -81,12 +81,14 @@ void swap6(char **x,char **y)
 	*x=*y;
 	*x=temp;
 }
+
 int main()
 {
+
 	int a=5,b=4;
+
 	swap1(&a,&b);
 	char *p="Dihan",*q="Ohi",r[10]="Subha",s[10]="Amrin";
-
 	swap6(&p,&q);
 	swap6((char**)&r,(char**)&s);
 	printf("%d %d\n",a,b);

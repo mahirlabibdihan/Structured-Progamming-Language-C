@@ -19,7 +19,7 @@ M A H I R     L A B I B     D I H A N
 // Properties :
 // Size of all types of pointer is 4/8 bytes(32/64 bit).
 // Pointer stores address of variable , not the value . Pointer gives indirect access to variables .
-// Pass by refernce with the help of pointer
+// Pass by reference with the help of pointer
 
 
 // Types :
@@ -48,6 +48,7 @@ M A H I R     L A B I B     D I H A N
 // int *(ptr[5]); // Array of 5 integer pointer
 // int (*ptr)[5];  // Pointer to an array of 5 integer
 // int (*ptr)(int,int);  // Function Pointer where the function is --- int Func(int a,int b); 
+// int *ptr(int,int);  // A function declaration
 int* Func()
 {
 

@@ -10,6 +10,10 @@ M A H I R     L A B I B     D I H A N
 */
 #include<stdio.h>
 
+int a;
+
+
+ 
 int main()
 {
 	int c[10]={1,2,3,4,5,6,7,8,9,10};
@@ -25,4 +29,10 @@ int main()
 	{
 		printf("%d ",b[i]);
 	}
+
+
+	int V[i];  // Variable length array
+	// Variable length arrays can't be initialized 
+	// This is valid for block scope or prototype scope , not for file scope
+	// Local Variable Length array is valid .Global Variable Length array is not valid .
 }

@@ -31,9 +31,10 @@ M A H I R     L A B I B     D I H A N
 
 // Floating-point Literal :
 // Default Type : double (8 bytes)
-// Suffix : L
+// Suffix : L , f
 // You can represent floating point literals either in decimal form or exponential form.
 // Spaces are not allowed
+// 3.1416f    // float
 // 3.1416 , -3,1416 ,+3.1416    // decimal form     // double
 // 31416e-4 , 31416E-4     // exponential form  // [+/-] <Mantissa> <e/E> [+/-] <Exponent>  
 // 3.1416L    // long double
@@ -83,6 +84,7 @@ struct S *a=&((struct S){1,2});
 int main()
 {
 
+	// printf("%d\n",sizeof(0.0f));
 	int *p=&((int){10});	// Address of Non-string Literal .
 
 	char *c ="Dihan" ;     // Address of String Literal
@@ -110,6 +112,5 @@ int main()
 
 
 	printf("%d %d %d\n",sizeof(d),sizeof('a'),sizeof(L'a'));
-
 
 }

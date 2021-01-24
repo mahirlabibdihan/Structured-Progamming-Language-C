@@ -20,7 +20,7 @@ int main()
 	int b=10;
 	printf("%d %d\n",sizeof b,sizeof(b));
 	printf("%d %d\n",sizeof 10,sizeof(10));
-	printf("%d\n",sizeof(int));
+	printf("%d\n",sizeof(int));  // sizeof int -> Error
 	
 	printf("Size of Short: %d\n",sizeof(short));
 	printf("Size of Integer: %d\n",sizeof(int));	
@@ -36,5 +36,12 @@ int main()
 	int (*c)[10];
 	int *d[10];
 	int e[10];
-	printf("%d %d %d %d",sizeof(c),sizeof(d),sizeof(e),sizeof(&e));
+	printf("%d %d %d %d\n",sizeof(c),sizeof(d),sizeof(e),sizeof(&e));
+
+	printf("%d\n",sizeof 5);
+
+
+	// Can't apply sizeof to bitfield
 }
+
+

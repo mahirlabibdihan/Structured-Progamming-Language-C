@@ -10,9 +10,10 @@ M A H I R     L A B I B     D I H A N
 */
 #include<stdio.h> 
 #include<stdlib.h>
+// Functions are the building blocks of C and the place where all program activity occurs.
 
-// return-type function-name (parameter declarations) {
-// definitions and statements
+// return-type function-name (parameters list) {
+// 		body of the function
 // }
 // int Function(int a,int b)
 // {
@@ -32,6 +33,11 @@ M A H I R     L A B I B     D I H A N
 
 //Function name is a pointer
 // Default return type of a function is int .
+// A function may return any type of data except an array.
+
+
+// An empty parameter list can be explicitly specified as such by placing the keyword void inside the parentheses.
+
 
 //Global Variables can be accessed and changed from any function
 //Local Variables can be accessed and changed from the same function only.Variable declared within a function can only be used by that function.
@@ -40,6 +46,13 @@ M A H I R     L A B I B     D I H A N
 
 //main() Function is must for a c program
 //main() Function cannot be called from another funtion [Infinity Loop]
+
+
+// Type Conversions of Arguments :
+// Arguments that are arrays or functions are converted to pointers before being passed as function arguments.
+// Arguments passed to non prototyped(variadic function) C functions undergo conversions: type  char parameters are converted to int, and float parameters to double. These are called default argument promotions.
+
+
 
 
 //Call by refference - Passing the address of a variable --- [ Array always call by refference ] 
@@ -159,19 +172,20 @@ void Array2D()
 
 
 //Function can not return more than one variable
-void F1(){}  // No parameter & No return value
+void F1(void){}  // No parameter & No return value
 void F2(int a){}  // With parameter & No return value
-int F3(){} // No parameter & with return value
+int F3(void){} // No parameter & with return value
 int F4(int a){} // With parameter & with return value
 
 
 
 void Function(int a,int b); //Function prototype or declaration // int a,int b are parameters 
 
+
 void FunctionPointer(void (*Function)(int,int)) //Function Pointer as Parameter
 {
 }
-
+// A function argument is an expression that is used within the parentheses of a function call. A function parameter is an object declared within the parentheses of a function declaration or definition. 
 
 //main() can return void/int in c program. But it must return int in c++ program.
 int main(int n,char *Argc[]) //Arguments in main function is Command-line argument //We can pass values to main function using command-line

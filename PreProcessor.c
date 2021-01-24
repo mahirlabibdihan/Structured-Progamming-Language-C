@@ -1,3 +1,7 @@
+// # : Pre-Directives
+// #include : It inserts all the contents of a file to the current program . System files are included using < > , user files are included using " " .
+#include<stdio.h>  
+
 #define X 0.8
 
 #define swap(Type,a,b) {Type c=a;a=b;b=c;}
@@ -23,7 +27,6 @@ int main()
 {
 	int counter=5;
 	print_dec(counter);
-	
 	printf("%#s %s %d %s",__DATE__,__TIME__,__LINE__,__FILE__);
 
 

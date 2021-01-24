@@ -40,7 +40,12 @@ struct S	// Structure Declaration + Definition .
 	int a,b;
 };
 
+
 main()
 {
 
 }
+
+
+// Variable can't be used until it is defined . 
+// Variables can't be defined without declaring

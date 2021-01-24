@@ -26,10 +26,9 @@ M A H I R     L A B I B     D I H A N
 #include<stdio.h>
 
 int A;   //Default storage class of global variable is External.
-extern int B;  //External storage class  // Same as int a;  // Can be accessed by the functions in different C program file as variable .
+extern int B;  //External storage class  // To link external variable 
 
-static int c;  //A static global variable is a global variable that can only be accessed by functions in the same C program file as the variable.  // file scope // Not for C++
-
+static int c;  // Internal Variable //A static global variable is a global variable that can only be accessed by functions in the same C program file as the variable.  // file scope // No external linkage possible
 int F()
 {
 	static int d=0; //static variable will be created and initialized only once in a program. No matter how many times it is been declared.
@@ -40,6 +39,7 @@ int F()
 }
 int main()
 {
+	
 	int a;  //default storage class of local variable is Automatic.
 	auto int b; // Automatic Storage Class // Same as int a.
 	register int c;  // Register Storage Class

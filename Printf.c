@@ -13,7 +13,6 @@ M A H I R     L A B I B     D I H A N
 
 // %[flags][width][.precision][length]specifier, 
 
-
 // On success, the total number of characters written is returned.
 
 // If a writing error occurs, the error indicator (ferror) is set and a negative number is returned.
@@ -81,5 +80,9 @@ void print()
 
   printf("%d\n",5.5);
   printf("%d\n",(int)5.5);
+
+
+  printf("%05d\n",-5);
+  printf("%5d\n",-5);
 }
 int main(){print();}

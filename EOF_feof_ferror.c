@@ -28,7 +28,7 @@ int main()
       	puts ("End-of-File reached.");
       	perror("Error printed by perror ");
     }
-    else if(ferror(Ptr))	  // feror() will return non-zero value as there's a error
+    else if(ferror(Ptr))	  // ferror() will return non-zero value as there's a error
     {
     	puts("Error reading file .");
     	perror("Error printed by perror ");		 
