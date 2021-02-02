@@ -287,7 +287,7 @@ void Swap(struct Day *a, struct Day *b)
 struct Flex
 {
 	int Roll;
-	char Name[];   // flexible array member // need another variable in the structure to declare flexible array // It must be the last element within thr structure
+	char Name[];   // flexible array member // need another variable in the structure to declare flexible array // It must be the last element within the structure
 };
 void FAM();
 int main()

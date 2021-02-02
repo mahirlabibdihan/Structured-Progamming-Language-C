@@ -62,9 +62,9 @@ int main()
  	// getchar();	  // flushes the '\n' entered after the string
 
 	// To take a whole line as input . 
- 	// scanf("\n%9[^\n]",e),scanf("%*[^\n]"),getchar();
+ 	// scanf(" %9[^\n]",e),scanf("%*[^\n]"),getchar();
  	// Can limit input string size .
- 	// ignores '\n' at the start of input buffer
+ 	// ignores whitespace characters at the start of input buffer
  	// flushes everything left in the stdin after taking limited input .
 
 

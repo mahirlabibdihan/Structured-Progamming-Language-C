@@ -93,18 +93,19 @@ int main()
 
 	// So what's the proper way to take a line as Input????
 	// Solution :
-	  scanf("\n%10[^\n]",Line1);      // Ignores newline and whitespaces at the beginning.
-	  scanf("%*[^\n]");		// Clears the stdin .( '\n' is still left in stdin .)
+	  scanf("\n%10[^\n]",Line1);      // Ignores whitespace characters at the beginning.
+	  scanf("%*[^\n]");		// Reads and Ignores characters left in stdin until '\n' . Thus clears the stdin . '\n' is still left in stdin .
 	  getchar();	// Clears '\n' from stdin .
 
 	// Take a whole line as input : 
 
 	/******* scanf("\n%10[^\n]",Line1),scanf("%*[^\n]"),getchar(); *******/
 
+	// or
 	// scanf("\n%10[^\n]",Line1);while((getchar()) != '\n');
 
 	// You can use this as a macro -
-	#define strin(String_Name,Input_Width) scanf("\n%"Input_Width"[^\n]",String_Name),scanf("%*[^\n]"),getchar()
+	#define strin(String_Name,Input_Width) scanf(" %"Input_Width"[^\n]",String_Name),scanf("%*[^\n]"),getchar()
 	// String_Name(A pointer) is the address of the string used for taking input .
 	// Input_Width(Character Array) is the width of the expected input . To set 10 as width we should pass "10" . 
 

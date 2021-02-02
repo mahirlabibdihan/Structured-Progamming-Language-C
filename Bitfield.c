@@ -9,7 +9,35 @@ M A H I R     L A B I B     D I H A N
 
 */
 #include<stdio.h> 
+// A bit-field must be a member of a structure or union.
 
+// Bitfield  :  Allocate memory to variables as our wish .
+
+
+// type_name variable_name: width;
+// Type of bitfield can't be floating type.
+// Width of bitfield cannot exceed its type . width<=sizeof(type)
+struct BitField1{
+	unsigned a:4;   // size of a is 4 Bit
+}Bit1;
+
+
+// Variable name is optional . But we cannot access the field without name
+// type_name : width;
+struct BitField2{
+	int:1;
+	signed a:4;   // size of a is 4 Bit
+}Bit2;
+
+// sizeof() can't be applied to bitfields
+// We can't take input to bitfields from user . But We can assign to bitfields .
+// Can not take address of Bit-Field
+
+
+// It is valid to mix normal structure members with bit-fields.
+
+
+// Bit-fields cannot be arrayed.
 typedef struct 
 {
 	int Date: 5;

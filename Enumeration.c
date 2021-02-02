@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-// enum enum_name { constants , ... , .. }[one or more variables ]
+// enum enum_name { constants , ... , .. }[one or more variables ];
 
 // Enumeration is a user defined datatype in C language. It is used to assign names to the integeral constants , which makes the code more readable . 
 // The value assigned to names in range from minimum possible integer value to maximum possible integer value.
@@ -19,6 +19,7 @@ enum Name{Dihan,Ohi=4,Amrin,Subha} Me=Dihan; // Can be declare this way
 enum Double{ Welcome = 0 , to = 1 , Cprogram = 0 };
 
 
+// The key point to understand about an enumeration is that each of the symbols stands for an integer value. As such, they can be used anywhere that an integer can be used.
 /******* Implementing Boolean data tyoe ********/
 	typedef enum
 	{

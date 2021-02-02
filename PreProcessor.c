@@ -23,6 +23,13 @@ int sum (int a,int b)
 #define MAX 100
 /****************************/
 
+
+// Multiline Preprocessor
+#def\
+ine \
+dihan\
+ 100
+
 int main()
 {
 	int counter=5;

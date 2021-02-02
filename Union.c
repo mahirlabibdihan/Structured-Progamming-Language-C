@@ -38,7 +38,6 @@ union U2{
 }Var2={.b=10};
 // Any other element other than first one can also be initialized
 
-
 int main()
 {
 
