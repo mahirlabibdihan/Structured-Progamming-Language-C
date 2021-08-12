@@ -24,7 +24,7 @@ int main(int arg);
 int main(int arg)
 {
 	char a;
-
+	
 	unsigned char b;
 	char unsigned c;
 
@@ -78,7 +78,7 @@ int main(int arg)
 	long unsigned int long R;
 	long int unsigned long S;
 	int long unsigned long T;
-	int long long unsigned U;	
+	int long long unsigned U;
 	long int long unsigned V;
 
 	float W;

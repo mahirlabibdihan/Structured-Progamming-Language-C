@@ -10,13 +10,13 @@ M A H I R     L A B I B     D I H A N
 */
 // An escape sequence is a sequence of characters that does not represent itself when used inside a character or string literal 
 
-// \a -> 7
-// \b -> 8
-// \t -> 9
-// \n -> 10
-// \v -> 11
-// \f -> 12
-// \r -> 13
+// \a -> 7	Alarm or Beep
+// \b -> 8	Backspace
+// \t -> 9	Tab (Horizontal)
+// \n -> 10 New Line
+// \v -> 11 Vertical Tab
+// \f -> 12	Form Feed
+// \r -> 13 Carriage Return (It will work when printing in terminal. If we write it in file it will work as new line.)
 
 
 // \OOO (octal-> O = [0 ... 7])
