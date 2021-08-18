@@ -37,3 +37,4 @@ Some basics of C programming language.<br>
 30. Variadic function
 31. Storage class
 32. Bit masking
+33. Literal
