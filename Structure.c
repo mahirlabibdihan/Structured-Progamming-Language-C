@@ -78,7 +78,7 @@
 
 
 	//If there are different data type variable in a structure , padding occurs.
-	//Structure Padding : Sizeof structure must be multiple of the sizeof highest datatype.
+	//Structure Padding : Size of structure must be multiple of the sizeof highest datatype.
 
 	typedef struct{
 		char a;
@@ -96,6 +96,32 @@
 	//|     |     |     |     |
 	//|  c  |     |	    |     |
 	//|_____|_____|_____|_____|
+
+
+
+	struct x{
+		int a;
+		char b[96];
+		double c;
+	};
+	// 112 bytes
+	// _______________________ _____ _____ _____ _____
+	//|                       |     |     |     |     |
+	//|  		  a           |b[0] |b[1] |b[2] |b[3] |
+	//|_____ _____ _____ _____|_____|_____|_____|_____|
+	//|     |     |     |     |     |     |     |     |
+	// ................................................
+	// ................................................
+	// ................................................
+	//|_____|_____|_____|_____|_____|_____|_____|_____|
+	//|     |     |     |     |     |     |     |     |
+	//|b[92]|b[93]|b[94]|b[95]|		|	  |		|	  |
+	//|_____|_____|_____|_____|_____|_____|_____|_____|
+	//|                     						  |
+	//|            			  c           			  |
+	//|_______________________________________________|
+
+
 
 	typedef struct{
 		char a;
@@ -226,8 +252,6 @@ void AssignStructure()
 	(*S).a=10;
 	S->a=10;  // Both are same
 	// printf("%d \n",S->a);
-
-	
 }
 
 
@@ -296,7 +320,7 @@ int main()
 	// scanf("%u",&Bit.a); // Incorrect
 	Bit.a=10;
 	// printf("%u\n",Bit.a);
-	printf("%d\n",sizeof(struct Flex)); 
+	printf("%d\n",sizeof(struct x)); 
 
 	FAM();
 	AssignStructure();

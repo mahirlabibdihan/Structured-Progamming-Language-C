@@ -12,7 +12,7 @@ bool compare(int a,int b)
 void sort(int i,int n,bool (*compare)(int,int))
 {
 	int a,b;
-  if(compare(i+1,i)) swap(a,b);
+    if(compare(i+1,i)) swap(a,b);
 }
   
 

@@ -48,7 +48,7 @@ M A H I R     L A B I B     D I H A N
 
 	There are 3 parts inside "For loop" divided by semi-colon.
 	Part 1: Initially you don't have any money. So we set the amount to 0.
-	Part 2: At every entry point a condition will be checked. The condition will be placed here. Which is amount<=10
+	Part 2: At every entry point a condition will be checked. The condition will be placed here. Which is amount<=10.We use boolean expressions to express a condition. amout<=10 is a boolean expression.
 	Part 3: Before exiting he will collect 1 taka. So total amount will increase by 1. We did this operation in this part.
 
 	There is a body in the for loop where you will do some work.
@@ -84,6 +84,8 @@ M A H I R     L A B I B     D I H A N
 
 	Part 1,2,3, Body are not mandatory for a "For loop".
 	You can customize them in you own way. This is just an example.
+
+
 
 
 */
