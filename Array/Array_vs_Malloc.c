@@ -15,7 +15,7 @@ void F1(int m,int (*x)[m]) // Not applicable in C++
 {
 
 }
-void F2(int** y) // Applicable in C++
+void F2(int** y) // Applicable in C++  // Applicable for 2D array made with dynamic allocation and 2d pointers
 {
 
 }
